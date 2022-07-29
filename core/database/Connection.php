@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Connection class is dedicated to handle the database connection dynamically.
+ */
+ 
 class Connection 
 {
 

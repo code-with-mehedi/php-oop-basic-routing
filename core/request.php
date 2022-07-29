@@ -1,5 +1,9 @@
 <?php
+/**
+ * Request class is dedicated to handle the request
+ */
 
+ 
 class Request 
 {
 

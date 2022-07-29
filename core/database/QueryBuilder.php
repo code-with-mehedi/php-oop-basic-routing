@@ -1,4 +1,7 @@
 <?php 
+/**
+ * QueryBuilder class is dedicated for Database query.
+ */
 
 class QueryBuilder 
 {

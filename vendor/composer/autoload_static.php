@@ -7,14 +7,17 @@ namespace Composer\Autoload;
 class ComposerStaticInitda6bdc69f96ff5173cc1a09a7de08be0
 {
     public static $classMap = array (
+        'App' => __DIR__ . '/../..' . '/core/app.php',
         'ComposerAutoloaderInitda6bdc69f96ff5173cc1a09a7de08be0' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitda6bdc69f96ff5173cc1a09a7de08be0' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Connection' => __DIR__ . '/../..' . '/core/database/Connection.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/pagesController.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/request.php',
         'Router' => __DIR__ . '/../..' . '/core/router.php',
+        'loginController' => __DIR__ . '/../..' . '/controllers/loginController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

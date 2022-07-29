@@ -17,9 +17,9 @@
 
 // ]);
 
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->get('about-culture', 'controllers/about-culture.php');
-$router->get('contact', 'controllers/contact.php');
-$router->get('tasks', 'controllers/tasks.php');
-$router->post('todo', 'controllers/todo.php');
+$router->get('', 'PagesController@home');
+$router->get('about', 'PagesController@about');
+$router->get('contact', 'PagesController@contact');
+$router->get('tasks', 'PagesController@tasks');
+$router->post('todo', 'PagesController@todo');
+$router->get('login', 'loginController@login');

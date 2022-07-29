@@ -1,8 +1,14 @@
 <?php
 
-$app=[];
+// Bootstrap file handle the database connection.
 
-$app['config'] = require './config.php';
+// $app=[];
+
+// $app['config'] = require './config.php';
+
+// reformat app array to DI container
+
+App::bind('config', require './config.php');
 
 // require 'core/database/Connection.php';
 
@@ -12,6 +18,12 @@ $app['config'] = require './config.php';
 
 // require 'core/request.php';
 
-$app['database']= new QueryBuilder(
-    Connection::make($app['config']['database'])
-);
+App::bind('database',new QueryBuilder(
+    Connection::make(App::get('config')['database'])
+));
+
+function view($name,$data=[]) 
+{
+    extract($data);
+    return require "views/{$name}.view.php";
+}
