@@ -1,7 +1,5 @@
 <?php require ('views/partials/header.php'); ?>
 
-<?php require ('views/partials/nav.php');?>
-
     <h1>Tasks List</h1>
     <ul class="task-list">
         <?php foreach ($query as $task) : ?>

@@ -1,8 +1,11 @@
 
 <?php require ('views/partials/header.php'); ?>
 
-<?php require ('views/partials/nav.php');?>
+    <h1>Add Todo</h1>
 
-    <h1>Home Page</h1>
+    <form method="POST" action="/todo">
+        <input type="text" name="description" placeholder="Description">
+        <input type="submit" value="Add">
+    </form>
 
 <?php require ('views/partials/footer.php');?>
