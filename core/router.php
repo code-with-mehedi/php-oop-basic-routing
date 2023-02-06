@@ -43,6 +43,7 @@ class Router
 
     public function direct($uri, $requetType) 
     {
+
         if (array_key_exists($uri,$this->routes[$requetType])) {
 
             return $this->callAction(
